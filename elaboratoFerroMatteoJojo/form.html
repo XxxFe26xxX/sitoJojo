@@ -1,0 +1,129 @@
+<html>
+
+<head>
+
+    <link rel="stylesheet" type="text/css" href="stylejojo3.css">
+    <title>jojo's_world.com</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script>
+
+        var nameUt;
+        var email;
+        var phone;
+
+        function Get(tipoNome, nameUt, tipomail, email, tipoTel, phone) {
+
+            var nome = $("input[type=" + tipoNome + "][name=" + nameUt + "]").val();
+            var mail = $("input[type=" + tipomail + "][name=" + email + "]").val();
+            var tel = $("input[type=" + tipoTel + "][name=" + phone + "]").val();
+
+            var mostra = "Utente : " + nome + "\ncon e-mail : " + mail + " \ne numero : " + tel + "\nE' stato registrato con successo!"
+
+            alert(mostra);
+
+        }
+
+    </script>
+
+</head>
+
+<header>
+    <b><a name="inizio"></a> JoJo's World </a></b>
+</header>
+
+<!-- INIZIO MENU-->
+<div id="hormenu">
+    <ul>
+
+        <!-- HOME MENU -->
+        <li>
+            <a href="indexJojo2.html">
+                <p class="menu">-- HOME -</p>
+            </a>
+        </li>
+
+        <li>
+            <a href="#developer">
+                <p class="menu">- WEB DEVELOPER --</p>
+            </a>
+        </li>
+
+    </ul>
+</div>
+<!-- FINE MENU-->
+
+<body class="form">
+
+    <div id="corpo">
+
+        <div id="divForm">
+
+
+            <form id="form" onsubmit="" method="post" autocomplete="on">
+
+
+                <p><label for="nameUt">NOME UTENTE: </label>
+                    <label><input type="text" id="nameUt" name="nameUt" placeholder="Nome Utente"></label>
+                </p>
+
+                <p><label for="email">EMAIL:
+                        <input type="email" id="email" name="email" placeholder="E-Mail"></label></p>
+
+                <p><label for="phone">NUMERO TELEFONICO:
+                        <input type="tel" id="phone" name="phone" placeholder="012-345-6789"
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required></label></p>
+
+                <p><label for="fav_anime">FAV ANIME:</label>
+                    <input type="radio" id="jojo" name="fav_anime" value="jojo">
+                    <label for="jojo">JOJO</label>
+                    <input type="radio" id="none" name="fav_anime" value="none">
+                    <label for="none">NONE</label>
+                </p>
+
+                <p><label for="jojos">FAV JOJO:</label>
+                    <select id="jo_list" name="jo_list" size="8">
+                        <option value="Jonathan">Jonathan</option>
+                        <option value="Joseph">Joseph</option>
+                        <option value="Jotaro">Jotaro</option>
+                        <option value="Josuke">Josuke</option>
+                        <option value="Giorno">Giorno</option>
+                        <option value="Jolyne">Jolyne</option>
+                        <option value="Johnny">Johnny</option>
+                        <option value="Josuke2">Josuke n.2</option>
+                    </select></label>
+                </p>
+
+                <p><label for="myfile">MANDA FOTO :
+                        <input type="file" id="myfile" name="myfile">
+                    </label></p>
+
+
+                <p><label><input type="submit" value="INVIA TUTTE LE RISPOSTE"
+                            onclick="Get('text','nameUt','email','email','tel','phone')"></label>
+
+                    <label><input type="reset"></label></p>
+
+            </form>
+
+        </div>
+
+        <div id="up">
+            <a href="#inizio"><img src="img/jojoLogo.png" alt="JJBA LOGO"></a>
+        </div>
+
+        <div id="freccia">
+            <a href="#inizio"><abbr title="TORNA ALL'INIZIO DELLA PAGINA"><img src="img/arrow.png" alt="Stand Arrow"
+                        width="100px" height="160px"></abbr></a>
+        </div>
+
+
+        <footer id="pp"><b><a name="developer"></a> Contatto Mail --> </a><a href="mailto:matteoferron2@gmail.com">
+                    Matteo Ferro </b></a></footer>
+
+
+
+</body>
+
+</html>

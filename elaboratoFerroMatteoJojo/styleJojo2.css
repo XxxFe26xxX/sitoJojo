@@ -1,0 +1,290 @@
+body {
+	background-color: #000000;
+	background-attachment: fixed;
+	background-image: url('img/sfondoNero2.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 0;
+}
+
+/*body.form{
+	background-color: #554f4f;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 0;
+}*/
+
+header {
+	width: 100%;
+	padding: 0.25cm;
+	background-color: #7611a5;
+	font-size: 4em;
+	text-align: center;
+	color: #ffffff;
+	background-image: url('img/sfondoKira.png');
+	background-repeat: repeat;
+	background-size: contain;
+	margin: 0;
+}
+
+footer {
+	position: static;
+	bottom: 0;
+	width: 100%;
+	padding-top: 1cm;
+	padding-bottom: 1cm;
+	color: #ffffff;
+	background-color: #7611a5;
+	font-size: 1.3em;
+	font-family: Consolas;
+	text-align: center;
+	margin: 0;
+}
+
+h1 {
+	font-family: Consolas;
+	text-align: center;
+	font-size: 1.5em;
+	color: #ffffff;
+}
+
+h2 {
+	font-family: Consolas;
+	text-align: center;
+	font-size: 1.75em;
+	color: #b436ee;
+}
+
+h3 {
+	font-family: Consolas;
+	text-align: center;
+	font-size: 2em;
+	color: #b436ee;
+}
+
+p {
+	font-family: Consolas;
+	text-align: justify;
+	font-size: 1.5em;
+	color: #ffffff;
+	margin-bottom: 1cm;
+}
+
+/* ------- P DEL MENU ----------- */
+
+p.menu {
+    font-family: Consolas;
+    text-align: justify;
+    font-size: 1.3em;
+    color: #ffffff;
+
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+p.subMenu {
+    font-family: Consolas;
+    text-align: justify;
+    font-size: 1.1em;
+    color: #ffffff;
+
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+/* --------- ALTRI P ---------------- */
+
+p.centro{
+	font-family: Consolas;
+	text-align: center;
+	font-size: 1.5em;
+	color: #ffffff;
+	margin-bottom: 1cm;
+}
+
+p2 {
+	font-family: Consolas;
+	text-align: justify;
+	font-size: 1.3em;
+	color: #ffffff;
+}
+
+p.medio {
+	font-family: Consolas;
+	text-align: justify;
+	font-size: 1.3em;
+	color: #ffffff;
+}
+
+p.personaggi {
+	font-family: Consolas;
+	text-align: justify;
+	font-size: 1.3em;
+	color: #ffffff;
+	margin-bottom: 1cm;
+}
+
+/* ---------- P3 è il trattino lol --------------- */
+p.trattino {
+	font-family: Consolas;
+	text-align: justify;
+	font-size: 1em;
+	color: #980cda;
+}
+
+p4 {
+	font-family: Consolas;
+	text-align: center !important;
+	font-size: 1.5em;
+	color: #ffffff;
+}
+
+img {
+	position: static;
+	align-items: center;
+	
+}
+
+#immagine{
+	text-align: center;
+	margin-top: 0.5cm;
+}
+
+/* ---------- DIV PER I PARAGRAFI --------------- */
+#pgr {
+	margin-top: 3cm;
+	margin-left: 12cm;
+	margin-right: 12cm;
+	text-align: justify;
+
+	min-width: 700px;
+}
+
+#pgr2 {
+	margin-left: 10cm;
+	margin-right: 10cm;
+	text-align: justify;
+
+	min-width: 700px;
+}
+
+#pgr3 {
+	margin-top: 3.5cm;
+	margin-left: 7cm;
+	margin-right: 7cm;
+	margin-bottom: 1cm;
+	text-align: justify;
+
+	min-width: 700px;
+}
+
+#up{
+	margin-top: 2cm;
+	margin-bottom: 1cm;
+	text-align: center;
+	
+}
+
+#freccia{
+	position: fixed;
+	bottom: 1cm;
+	right: 1cm;
+}
+
+#form{
+	padding-top: 2cm;
+}
+
+#cani{
+	padding-top: 2cm;
+	text-align: center;
+}
+
+#audio{
+	text-align: center;
+	padding-top: 1cm;
+	
+}
+
+#spazio{
+	padding-top: 0.5cm;
+	padding-bottom: 0.5cm;
+}
+
+/* spazioP sarebbe lo spazio piccolo */
+#spazioP{
+	padding-top: 0.3cm;
+	padding-bottom: 0.3cm;
+}
+
+
+/* ---------- CSS MENU --------------- */
+
+
+div#hormenu {
+
+    max-height: 60px;
+
+    width: 100%;
+    float: left;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid #980cda;
+    background: #980cda;
+}
+
+div#hormenu ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+div#hormenu li {
+
+    float: left;
+    margin: 0;
+    padding: 0;
+    border-right: 1px solid black;
+    color: black;
+}
+
+div#hormenu a {
+
+    max-height: 50px;
+
+    display: block;
+    padding: 3px;
+    color: #000;
+    text-decoration: none;
+}
+
+div#hormenu a:hover {
+    background-color: #000000;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+div#hormenu li ul {
+    display: none
+}
+
+div#hormenu li:hover ul {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    ;
+    padding: 0;
+    margin: 0 0 0 -1px;
+    border: 1px solid black;
+    background: #980cda;
+}
+
+div#hormenu li li {
+    border: none;
+    ;
+}
+
+div#hormenu li li a {
+    padding: 2px 2px 2px 10px;
+}
